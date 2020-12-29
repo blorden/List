@@ -1,0 +1,29 @@
+digraph LIST_DUMP {
+	node [shape=box, style="filled", fillcolor="white", fontcolor="black", fontsize="9"];
+label = "List valid nodes";
+"7" [shape="record", label="physycal number: 7 |logic number: 1 |value: 1000"];
+"1" [shape="record", label="physycal number: 1 |logic number: 2 |value: 10"];
+"2" [shape="record", label="physycal number: 2 |logic number: 3 |value: 11"];
+"3" [shape="record", label="physycal number: 3 |logic number: 4 |value: 12"];
+"4" [shape="record", label="physycal number: 4 |logic number: 5 |value: 13"];
+"6" [shape="record", label="physycal number: 6 |logic number: 6 |value: 15"];
+"8" [shape="record", label="physycal number: 8 |logic number: 7 |value: 17"];
+"9" [shape="record", label="physycal number: 9 |logic number: 8 |value: 18"];
+"10" [shape="record", label="physycal number: 10 |logic number: 9 |value: 19"];
+"7"->"1" [constraint = "false"];
+"1"->"7";
+"1"->"2" [constraint = "false"];
+"2"->"1";
+"2"->"3" [constraint = "false"];
+"3"->"2";
+"3"->"4" [constraint = "false"];
+"4"->"3";
+"4"->"6" [constraint = "false"];
+"6"->"4";
+"6"->"8" [constraint = "false"];
+"8"->"6";
+"8"->"9" [constraint = "false"];
+"9"->"8";
+"9"->"10" [constraint = "false"];
+"10"->"9";
+}
